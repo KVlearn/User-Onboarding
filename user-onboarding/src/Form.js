@@ -236,7 +236,7 @@ function Form(){
         <button type="submit"
         onClick={handleSubmit}
         disabled={isButtonDisabled}>Submit</button>
-        {/* <pre>{JSON.stringify(users, null, 2)}</pre> */}
+        <pre>{JSON.stringify(users, null, 2)}</pre>
         <h4>Our Team !</h4>
         <div className="info">{users.map((item)=> {
             return <div key={item.fname}> <li>{item.fname} | {item.role}<br/></li> </div>
